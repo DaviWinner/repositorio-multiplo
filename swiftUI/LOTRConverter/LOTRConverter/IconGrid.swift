@@ -1,0 +1,39 @@
+//
+//  IconGrid.swift
+//  LOTRConverter
+//
+//  Created by Davi Silva on 09/01/26.
+//
+
+import SwiftUI
+
+struct IconGrid: View {
+    @State var currency: Currency
+    
+    var body: some View {
+        LazyVGrid(columns: [GridItem(), GridItem(), GridItem()]){
+            ForEach(Currency.allCases){ currency in
+                if self.currency == currency {
+                    CurrencyIcon(currencyImage: currency.image, currencyText: currency.name )
+                        .shadow(color: .black, radius: 10)
+                        .overlay {
+                            RoundedRectangle(cornerRadius: 25)
+                                .stroke(lineWidth: 3)
+                                .opacity(0.5)
+                        }
+                } else{
+                    CurrencyIcon(currencyImage: currency.image, currencyText: currency.name )
+                        .onTapGesture {
+                            self.currency = currency
+                        }
+                }
+            }
+        }
+    }
+}
+    #Preview {
+        IconGrid(currency: .silverPiece)
+    }
+    
+    
+    
