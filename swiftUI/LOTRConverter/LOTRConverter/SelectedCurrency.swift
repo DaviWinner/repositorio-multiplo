@@ -12,11 +12,11 @@ struct SelectCurrency: View {
                 .ignoresSafeArea()
                 .background(.brown)
             //parchment background image
-            VStack{ 
+            VStack{
                 //text
-                Text("Select the currency you are starting with: batata")
+                Text("Select the currency you are starting with:")
                     .fontWeight(.bold)
-                    
+                
                 // currency icons
                 IconGrid(currency: topCurrency)
                 //text
@@ -34,15 +34,20 @@ struct SelectCurrency: View {
                 .font(.largeTitle)
                 .padding()
                 .foregroundStyle(.white)
-              
+                
             }
             .padding()
             .multilineTextAlignment(.center)
             .foregroundStyle(.black)
         }
+        .onTapGesture {
+        
+        }
     }
 }
+
 #Preview {
+    @Previewable @State var topCurrency: Currency = .silverPenny
     SelectCurrency( topCurrency: .silverPenny , bottomCurrency: .goldPenny )
 }
 
