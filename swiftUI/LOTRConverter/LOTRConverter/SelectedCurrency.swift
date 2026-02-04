@@ -14,7 +14,7 @@ struct SelectCurrency: View {
             //parchment background image
             VStack{ 
                 //text
-                Text("Select the currency you are starting with:")
+                Text("Select the currency you are starting with: batata")
                     .fontWeight(.bold)
                     
                 // currency icons
