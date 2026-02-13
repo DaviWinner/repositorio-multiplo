@@ -14,6 +14,9 @@ struct ContentView: View {
     @State var leftAmount = ""
     @State var rightAmount = ""
     
+    @FocusState var leftTyping
+    @FocusState var rightTyping
+    
     @State var leftCurrency = Currency.silverPiece
     @State var rightCurrency: Currency = .goldPiece
     var body: some View {
@@ -26,13 +29,13 @@ struct ContentView: View {
                 .ignoresSafeArea()
             
             VStack{
-               // Prancing pony image
+                // Prancing pony image
                 Image(.prancingpony)
                     .resizable()
                     .scaledToFit()
                     .frame(height: 200)
-                 
-               // Currency exchange text
+                
+                // Currency exchange text
                 Text("Currency Exchange")
                     .font(.largeTitle)
                     .foregroundStyle(.white)
@@ -56,10 +59,12 @@ struct ContentView: View {
                         .onTapGesture{
                             showSelectCurrency.toggle()
                         }
-                       // Text field
+                        // Text field
                         TextField("Amount", text: $leftAmount)
                             .textFieldStyle(.roundedBorder)
                             .multilineTextAlignment(.trailing)
+                            .onChange(of: leftAmount){
+                                rightAmount = leftCurrency .convert(leftAmount, to: rightCurrency)                           }
                         
                         
                     }
@@ -89,45 +94,41 @@ struct ContentView: View {
                         .onTapGesture{
                             showSelectCurrency.toggle()
                         }
-                      
-                       // Text field
+                        
+                        // Text field
                         TextField("Amount", text: $rightAmount)
                             .textFieldStyle(.roundedBorder)
                             .multilineTextAlignment(.trailing)
+                            .onChange(of: rightAmount){
+                                leftAmount = rightCurrency .convert(rightAmount, to: leftCurrency)
+                            }
                     }
-                }
-                .padding()
-                .background(.black.opacity(0.5))
-                .clipShape(.capsule)
-
-                Spacer()
-                
-                HStack {
+                    .padding()
+                    .background(.black.opacity(0.5))
+                    .clipShape(.capsule)
+                    
                     Spacer()
                     
-                    Button {
-                        showExchangeInfo.toggle()
-                    } label: {
-                        Image(systemName: "info.circle.fill")
-                            .font(.largeTitle)
-                            .foregroundStyle(.white)
-                    }
-                    .padding(.trailing)
-                    .sheet(isPresented: $showExchangeInfo) {
-                        ExchangeInfo()
-                    }
-                    .sheet(isPresented: $showSelectCurrency){
-                        SelectCurrency(topCurrency: $leftCurrency, bottomCurrency: $rightCurrency)
+                    HStack {
+                        Spacer()
+                        
+                        Button {
+                            showExchangeInfo.toggle()
+                        } label: {
+                            Image(systemName: "info.circle.fill")
+                                .font(.largeTitle)
+                                .foregroundStyle(.white)
+                        }
+                        .padding(.trailing)
+                        .sheet(isPresented: $showExchangeInfo) {
+                            ExchangeInfo()
+                        }
+                        .sheet(isPresented: $showSelectCurrency){
+                            SelectCurrency(topCurrency: $leftCurrency, bottomCurrency: $rightCurrency)
+                        }
                     }
                 }
             }
         }
     }
-}
-    
-
-
-
-#Preview {
-    ContentView()
 }
