@@ -63,8 +63,7 @@ struct ContentView: View {
                         TextField("Amount", text: $leftAmount)
                             .textFieldStyle(.roundedBorder)
                             .multilineTextAlignment(.trailing)
-                            .onChange(of: leftAmount){
-                                rightAmount = leftCurrency .convert(leftAmount, to: rightCurrency)                           }
+                            .focused($leftTyping)
                         
                         
                     }
@@ -99,8 +98,11 @@ struct ContentView: View {
                         TextField("Amount", text: $rightAmount)
                             .textFieldStyle(.roundedBorder)
                             .multilineTextAlignment(.trailing)
+                            .focused($rightTyping)
                             .onChange(of: rightAmount){
-                                leftAmount = rightCurrency .convert(rightAmount, to: leftCurrency)
+                                if rightTyping {
+                                    leftAmount = rightCurrency .convert(rightAmount, to: leftCurrency)
+                                }
                             }
                     }
                     .padding()
@@ -120,15 +122,35 @@ struct ContentView: View {
                                 .foregroundStyle(.white)
                         }
                         .padding(.trailing)
-                        .sheet(isPresented: $showExchangeInfo) {
-                            ExchangeInfo()
-                        }
-                        .sheet(isPresented: $showSelectCurrency){
-                            SelectCurrency(topCurrency: $leftCurrency, bottomCurrency: $rightCurrency)
-                        }
                     }
                 }
+                //.border(.blue)
+            }
+            .onChange(of: leftAmount){
+                if leftTyping {
+                    rightAmount = leftCurrency .convert(leftAmount, to: rightCurrency)
+                }
+            }
+            .onChange(of: rightAmount){
+                if rightTyping {
+                    leftAmount = rightCurrency .convert(rightAmount, to: leftCurrency)
+                }
+            }
+            .onChange(of: leftCurrency ) {
+                
+            }
+            .onChange(of: rightCurrency){
+                
+            }
+            .sheet(isPresented: $showExchangeInfo) {
+                ExchangeInfo()
+            }
+            
+            .sheet(isPresented: $showSelectCurrency){
+                SelectCurrency(topCurrency: $leftCurrency, bottomCurrency: $rightCurrency)
             }
         }
     }
 }
+
+
