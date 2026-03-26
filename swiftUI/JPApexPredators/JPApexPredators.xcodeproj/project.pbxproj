@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		08A76E062EB1725800525E02 /* LOTRConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LOTRConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		081AB8E52F7328F9003292D9 /* JPApexPredators.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JPApexPredators.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		08A76E082EB1725800525E02 /* LOTRConverter */ = {
+		081AB8E72F7328F9003292D9 /* JPApexPredators */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = LOTRConverter;
+			path = JPApexPredators;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		08A76E032EB1725800525E02 /* Frameworks */ = {
+		081AB8E22F7328F9003292D9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -29,18 +29,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		08A76DFD2EB1725800525E02 = {
+		081AB8DC2F7328F8003292D9 = {
 			isa = PBXGroup;
 			children = (
-				08A76E082EB1725800525E02 /* LOTRConverter */,
-				08A76E072EB1725800525E02 /* Products */,
+				081AB8E72F7328F9003292D9 /* JPApexPredators */,
+				081AB8E62F7328F9003292D9 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		08A76E072EB1725800525E02 /* Products */ = {
+		081AB8E62F7328F9003292D9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				08A76E062EB1725800525E02 /* LOTRConverter.app */,
+				081AB8E52F7328F9003292D9 /* JPApexPredators.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,64 +48,64 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		08A76E052EB1725800525E02 /* LOTRConverter */ = {
+		081AB8E42F7328F9003292D9 /* JPApexPredators */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 08A76E142EB1725B00525E02 /* Build configuration list for PBXNativeTarget "LOTRConverter" */;
+			buildConfigurationList = 081AB8F02F7328FC003292D9 /* Build configuration list for PBXNativeTarget "JPApexPredators" */;
 			buildPhases = (
-				08A76E022EB1725800525E02 /* Sources */,
-				08A76E032EB1725800525E02 /* Frameworks */,
-				08A76E042EB1725800525E02 /* Resources */,
+				081AB8E12F7328F9003292D9 /* Sources */,
+				081AB8E22F7328F9003292D9 /* Frameworks */,
+				081AB8E32F7328F9003292D9 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				08A76E082EB1725800525E02 /* LOTRConverter */,
+				081AB8E72F7328F9003292D9 /* JPApexPredators */,
 			);
-			name = LOTRConverter;
+			name = JPApexPredators;
 			packageProductDependencies = (
 			);
-			productName = LOTRConverter;
-			productReference = 08A76E062EB1725800525E02 /* LOTRConverter.app */;
+			productName = JPApexPredators;
+			productReference = 081AB8E52F7328F9003292D9 /* JPApexPredators.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		08A76DFE2EB1725800525E02 /* Project object */ = {
+		081AB8DD2F7328F9003292D9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1620;
-				LastUpgradeCheck = 1620;
+				LastSwiftUpdateCheck = 2620;
+				LastUpgradeCheck = 2620;
 				TargetAttributes = {
-					08A76E052EB1725800525E02 = {
-						CreatedOnToolsVersion = 16.2;
+					081AB8E42F7328F9003292D9 = {
+						CreatedOnToolsVersion = 26.2;
 					};
 				};
 			};
-			buildConfigurationList = 08A76E012EB1725800525E02 /* Build configuration list for PBXProject "LOTRConverter" */;
+			buildConfigurationList = 081AB8E02F7328F9003292D9 /* Build configuration list for PBXProject "JPApexPredators" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 08A76DFD2EB1725800525E02;
+			mainGroup = 081AB8DC2F7328F8003292D9;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 08A76E072EB1725800525E02 /* Products */;
+			productRefGroup = 081AB8E62F7328F9003292D9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				08A76E052EB1725800525E02 /* LOTRConverter */,
+				081AB8E42F7328F9003292D9 /* JPApexPredators */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		08A76E042EB1725800525E02 /* Resources */ = {
+		081AB8E32F7328F9003292D9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -115,7 +115,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		08A76E022EB1725800525E02 /* Sources */ = {
+		081AB8E12F7328F9003292D9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -125,7 +125,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		08A76E122EB1725B00525E02 /* Debug */ = {
+		081AB8EE2F7328FC003292D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -177,7 +177,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -188,7 +188,7 @@
 			};
 			name = Debug;
 		};
-		08A76E132EB1725B00525E02 /* Release */ = {
+		081AB8EF2F7328FC003292D9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -234,7 +234,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -244,64 +244,64 @@
 			};
 			name = Release;
 		};
-		08A76E152EB1725B00525E02 /* Debug */ = {
+		081AB8F12F7328FC003292D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"LOTRConverter/Preview Content\"";
-				DEVELOPMENT_TEAM = VF7VYA94WY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = DaviTestings.LOTRConverter2;
+				PRODUCT_BUNDLE_IDENTIFIER = DaviTestings.JPApexPredators;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 6.0;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		08A76E162EB1725B00525E02 /* Release */ = {
+		081AB8F22F7328FC003292D9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"LOTRConverter/Preview Content\"";
-				DEVELOPMENT_TEAM = VF7VYA94WY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = DaviTestings.LOTRConverter2;
+				PRODUCT_BUNDLE_IDENTIFIER = DaviTestings.JPApexPredators;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 6.0;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -309,25 +309,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		08A76E012EB1725800525E02 /* Build configuration list for PBXProject "LOTRConverter" */ = {
+		081AB8E02F7328F9003292D9 /* Build configuration list for PBXProject "JPApexPredators" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				08A76E122EB1725B00525E02 /* Debug */,
-				08A76E132EB1725B00525E02 /* Release */,
+				081AB8EE2F7328FC003292D9 /* Debug */,
+				081AB8EF2F7328FC003292D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		08A76E142EB1725B00525E02 /* Build configuration list for PBXNativeTarget "LOTRConverter" */ = {
+		081AB8F02F7328FC003292D9 /* Build configuration list for PBXNativeTarget "JPApexPredators" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				08A76E152EB1725B00525E02 /* Debug */,
-				08A76E162EB1725B00525E02 /* Release */,
+				081AB8F12F7328FC003292D9 /* Debug */,
+				081AB8F22F7328FC003292D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 08A76DFE2EB1725800525E02 /* Project object */;
+	rootObject = 081AB8DD2F7328F9003292D9 /* Project object */;
 }

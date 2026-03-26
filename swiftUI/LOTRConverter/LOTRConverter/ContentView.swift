@@ -4,7 +4,7 @@
 //
 //  Created by Davi Silva on 28/10/25.
 //
-
+import TipKit
 import SwiftUI
 
 struct ContentView: View {
@@ -21,6 +21,7 @@ struct ContentView: View {
     @State var rightCurrency: Currency = .goldPiece
     var body: some View {
         
+        let currencyTip = CurrencyTip()
         
         ZStack {
             //BackGround image
@@ -59,6 +60,9 @@ struct ContentView: View {
                         .onTapGesture{
                             showSelectCurrency.toggle()
                         }
+                        
+                        .popoverTip(currencyTip, arrowEdge: .bottom)
+                        
                         // Text field
                         TextField("Amount", text: $leftAmount)
                             .textFieldStyle(.roundedBorder)
@@ -126,6 +130,9 @@ struct ContentView: View {
                     }
                 }
                 //.border(.blue)
+            }
+            .task {
+                <#code#>
             }
             .onChange(of: leftAmount){
                 if leftTyping {
